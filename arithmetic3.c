@@ -1,16 +1,31 @@
 /*
  * arithmetic3.c
  *
- *  Created on: 27 oct. 2018
- *      Author: Stephane
+ *  
  */
-
+/**
+ * \file arithmétic.c
+ * \brief routines de calcul en précision infinie
+ * \author gl
+ * \version 0.1
+ * \date automne 2018
+ *
+ * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
+ *
+ */
 #include "rsa.h"
 
 void encode(INT v, NB *n, int p10);
 void sumINTr(INT v, INT w, int r, INT *msb, INT *lsb);
 void multINTbyINT(INT v, INT w, INT *msb, INT *lsb);
 void decaleNB(NB *n, int count);
+
+/**
+ * \fn NB atoNBfct(char *str)
+ * \brief conversion d'une chaîne de caractères en N
+ * \param char *str, la chaîne à convertir
+ * \return une structure NB
+ */
 
 NB atoNBfct(char *str) {
 	NB n = newNB();
